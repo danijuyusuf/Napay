@@ -1,0 +1,347 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #f9f9f9;
+	color: black;
+	font-family: candara, tahoma, roboto, helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*    color: #232525;*/
+	
+}
+
+ul {
+	margin-left: 20px;
+}
+
+li {
+	display: block;
+}
+
+.category {
+	margin-left: 80px;
+}
+
+#logostart {
+	padding-left: 50px;	
+}
+
+#header {
+	font-size: 30;
+	color: seagreen;
+	
+}
+
+
+#mainPhoto {
+	height: 15em;
+	border: 1px solid black;
+}
+
+
+    #slides {
+      display: none
+    }
+
+/*
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+*/
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+  <!-- End SlidesJS Optional-->
+
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#menucss {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+#menucss > ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+#menucss > ul li#responsive-tab {
+  display: none;
+/*   Hide for large screens */
+
+}
+#menucss > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#menucss > ul li right {
+  float: right;
+}
+#menucss > ul li {
+  position: relative;
+}
+
+}
+#menucss > ul li ul {
+  display: none;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  border-top: 0 none;
+}
+#menucss > ul li ul li {
+  display: block;
+}
+/*
+#menucss > ul li > a {
+  background-image: url('images/caret.png');
+  background-repeat: no-repeat;
+  background-position: 90% -95%;
+}
+*/
+
+#menucss > ul li a {
+  display: block;
+  padding: 12px 24px 11px 24px;
+  text-decoration: none;
+  color: #747474;
+  text-shadow: 0px 1px 0px #fff;
+}
+
+@media (max-width: 600px) {
+  #menucss > ul {
+    width: 100%;
+  }
+  #menucss > ul li#responsive-tab {
+    display: block;
+  }
+/*
+  #menucss > ul li#responsive-tab a {
+    background: url('images/menu.png') no-repeat;
+    background-position: 95% -35%;
+  }
+*/
+  #menucss > ul li#responsive-tab a:hover {
+    background-color: #d80041;
+    background-position: 95% 135%;
+  }
+  #menucss > ul li {
+    display: none;
+  }
+  #menucss > ul li.right {
+    float: none;
+  }
+  #menucss > ul li {
+    position: relative;
+  }
+  #menucss > ul li ul {
+    display: block;
+    position: static;
+    width: 100%;
+    background: #ffffff;
+    border: 0 none;
+  }
+  #menucss > ul li.has-sub ul li {
+    display: block !important;
+  }
+  #menucss > ul li.has-sub ul li a span {
+    display: block;
+    padding-left: 24px;
+  }
+  #menucss > ul li.has-sub > a {
+    background-image: none;
+  }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  #menucss > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #menucss > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+/*
+.ulclass
+{
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 -10px 16px #E7E7E7 inset;
+    list-style: none outside none;   
+    overflow: auto;
+
+
+}
+*/
+
+.ulclass li a
+{
+    color: #6A6A6A;
+    line-height: 35px;
+    text-decoration:none;
+    padding: 0 17px;
+}
+
+.ulclass li a:hover
+{
+    text-decoration:underline;
+}
+
+.ulclass li:hover .ulsubmenu
+{
+    display:block;
+}
+
+.ulsubmenu
+{ 
+    display: none;
+    position: absolute;
+}
+
+
+.ulsubmenu
+{
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px #EAEAEA;
+    display: none;
+    list-style: none outside none;
+    position: absolute;
+    width: 668px;
+    transition: all 0.9s ease-in-out;
+}
+.ulsubmenu li
+{
+    border: medium none;
+    width: 222px;
+}
+.ulsubmenu li:last-of-type
+{
+    border: medium none !important;
+}
+.ulsubmenu li a
+{
+    font-family: arial !important;
+    font-size: 12px;
+    font-weight: normal !important;
+}
+.kaymu {
+position: absolute;
+border-left: 123;
+}
